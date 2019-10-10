@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ex 3</title>
+</head>
+
+<body>
+	<ul id="list"></ul>
+
+	<script>
+		var nomes = ["Diego", "Gabriel", "Lucas"];
+
+		for(nome of nomes) {
+			let li = document.createElement('li');
+			li.appendChild(document.createTextNode(nome));
+			document.querySelector('#list').appendChild(li);
+		}
+
+	</script>
+</body>
+
+</html>
