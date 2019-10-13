@@ -20,7 +20,9 @@ function githubRequest(user) {
       criarListaRepositorios(response);
     })
     .catch(function(error) {
-      console.log(error);
+      createNewUl();
+      if(error.response.status === 404)
+        createNewLi('Usuario não Existe!');
     });
 }
 
